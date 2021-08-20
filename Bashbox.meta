@@ -1,9 +1,9 @@
 NAME="bigdroid-action"
 CODENAME="bigdroid-action"
 AUTHORS=("AXON <axonasif@gmail.com>")
-VERSION="0.1.1"
+VERSION="0.1.2"
 DEPENDENCIES=(
 	std::0.1.8
 )
 REPOSITORY=""
-BASHBOX_COMPAT="0.3.5~"
+BASHBOX_COMPAT="0.3.6~"
