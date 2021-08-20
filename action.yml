@@ -1,0 +1,10 @@
+name: 'Bigdroid Build Action'
+author: 'AXON'
+description: 'Automatically builds and releases bigdroid project'
+
+runs:
+  using: "composite"
+  steps:
+    - id: bigdroid-build
+      run: ${{ github.action_path }}/bigdroid-action
+      shell: bash
