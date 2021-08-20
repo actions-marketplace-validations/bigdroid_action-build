@@ -3,7 +3,7 @@
 ## Example workflow
 
 ```yml
-name: Build Bigdroid
+name: Build Bigdroid Project
 
 on: tags
 
@@ -15,4 +15,6 @@ jobs:
       - uses: actions/checkout@v2
       - id: bigdroid-build
         uses: bigdroid/action-build
+		env:
+			API_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
