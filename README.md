@@ -3,14 +3,16 @@
 ## Example workflow
 
 ```yml
+name: Build Bigdroid
+
 on: tags
 
 jobs:
   publish_release:
     runs-on: ubuntu-latest
-    name: Building your Bigdroid project
+    name: Building Bigdroid project
     steps:
       - uses: actions/checkout@v2
       - id: bigdroid-build
-        uses: bigdroid/action-build@0.1.0
+        uses: bigdroid/action-build
 ```

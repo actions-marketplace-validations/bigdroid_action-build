@@ -29,6 +29,11 @@ function todo() {
 }
 
 function main() {
+	curl --proto '=https' --tlsv1.2 -sSfL "https://git.io/Jc9bH" | bash -s selfinstall;
+	source ~/.bashbox/env;
+	bashbox install --force bigdroid;
+	bigdroid build --release;
+
 	local _head_tag;
 	_head_tag="$(git -C "." name-rev --tags --name-only HEAD)";
 	source Bigdroid.meta;
