@@ -8,3 +8,5 @@ runs:
     - id: bigdroid-build
       run: ${{ github.action_path }}/bigdroid-action
       shell: bash
+      env:
+        LAST_GITHUB_PUSH_HASH: ${{ github.event.before }}
