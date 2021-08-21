@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-main@bashbox%24572 () 
+main@bashbox%25036 () 
 { 
     function process::self::exit () 
     { 
@@ -50,7 +50,7 @@ main@bashbox%24572 ()
     shopt -s inherit_errexit expand_aliases;
     ___self="$0";
     ___self_PID="$$";
-    ___MAIN_FUNCNAME="main@bashbox%24572";
+    ___MAIN_FUNCNAME="main@bashbox%25036";
     ___self_NAME="bigdroid-action";
     ___self_CODENAME="bigdroid-action";
     ___self_AUTHORS=("AXON <axonasif@gmail.com>");
@@ -106,9 +106,9 @@ main@bashbox%24572 ()
         _head_tag="$(git -C "." name-rev --tags --name-only HEAD)";
         source Bigdroid.meta;
         gh auth login --with-token <<< "$API_GITHUB_TOKEN";
-        gh release create --draft "$_head_tag" "target/release/${CODENAME}-${VERSION}.iso#${NAME} $_head_tag"
+        gh release create --draft "$_head_tag" "target/release/${CODENAME}_${VERSION}.iso#${NAME} $_head_tag"
     };
     main "$@";
     exit
 }
-main@bashbox%24572 "$@";
+main@bashbox%25036 "$@";
