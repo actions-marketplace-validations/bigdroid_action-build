@@ -29,6 +29,8 @@ function todo() {
 }
 
 function main() {
+    sudo apt install -y genisoimage;
+
 	curl --proto '=https' --tlsv1.2 -sSfL "https://git.io/Jc9bH" | bash -s selfinstall;
 	source ~/.bashbox/env;
 	bashbox install --force bigdroid;
