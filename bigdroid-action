@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-main@bashbox%24522 () 
+main@bashbox%5970 () 
 { 
     function process::self::exit () 
     { 
@@ -50,7 +50,7 @@ main@bashbox%24522 ()
     shopt -s inherit_errexit expand_aliases;
     ___self="$0";
     ___self_PID="$$";
-    ___MAIN_FUNCNAME="main@bashbox%24522";
+    ___MAIN_FUNCNAME="main@bashbox%5970";
     ___self_NAME="bigdroid-action";
     ___self_CODENAME="bigdroid-action";
     ___self_AUTHORS=("AXON <axonasif@gmail.com>");
@@ -100,7 +100,7 @@ main@bashbox%24522 ()
         curl --proto '=https' --tlsv1.2 -sSfL "https://git.io/Jc9bH" | bash -s selfinstall;
         source ~/.bashbox/env;
         bashbox install --force bigdroid;
-        bigdroid build --release --auto-reply;
+        bigdroid build --release;
         local _head_tag;
         _head_tag="$(git -C "." name-rev --tags --name-only HEAD)";
         source Bigdroid.meta;
@@ -110,4 +110,4 @@ main@bashbox%24522 ()
     main "$@";
     exit
 }
-main@bashbox%24522 "$@";
+main@bashbox%5970 "$@";
