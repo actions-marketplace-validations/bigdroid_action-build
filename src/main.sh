@@ -40,5 +40,5 @@ function main() {
 	_head_tag="$(git -C "." name-rev --tags --name-only HEAD)";
 	source Bigdroid.meta;
 	gh auth login --with-token <<<"$API_GITHUB_TOKEN";
-	gh release create --draft "$_head_tag" "target/release/${CODENAME}-${VERSION}.iso#${NAME} $_head_tag";
+	gh release create --draft "$_head_tag" "target/release/${CODENAME}_${VERSION}.iso#${NAME} $_head_tag";
 }
